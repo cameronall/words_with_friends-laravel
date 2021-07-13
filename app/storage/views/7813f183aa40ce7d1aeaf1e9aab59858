@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>Look at me Login</title>
+</head>
+<body>
+
+	<?php echo Form::open(array('url' => 'login')); ?>
+		<h1>Login</h1>
+
+		<!-- if there are login errors, show them here -->
+		<?php if (Session::get('loginError')): ?>
+		<div class="alert alert-danger"><?php echo Session::get('loginError'); ?></div>
+		<?php endif; ?>
+
+		<p>
+			<?php echo $errors->first('email'); ?>
+			<?php echo $errors->first('password'); ?>
+		</p>
+
+		<p>
+			<?php echo Form::label('email', 'Email Address'); ?>
+			<?php echo Form::text('email', Input::old('email'), array('placeholder' => 'awesome@awesome.com')); ?>
+		</p>
+
+		<p>
+			<?php echo Form::label('password', 'Password'); ?>
+			<?php echo Form::password('password'); ?>
+		</p>
+
+		<p><?php echo Form::submit('Submit!'); ?></p>
+	<?php echo Form::close(); ?>
+
+</body>
+</html>
