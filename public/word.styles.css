@@ -1,4 +1,52 @@
-    body { font: 16px "Lucida Grande",Helvetica,Verdana,Arial,Tahoma,sans-serif; }
+
+	table {
+		padding:0px;
+	    	border-spacing: 0;
+		text-align:center;
+		margin:0px auto;
+	}
+    
+    body { 
+    		font: 16px "Lucida Grande",Helvetica,Verdana,Arial,Tahoma,sans-serif;
+    		min-height:860px;
+		height: 100%!important;
+		display: block;
+		position: relative;
+    	}
+  
+    	body + div {
+		padding-bottom:160px;
+		min-height:99%;
+		top:0px;
+		bottom:0px;
+		width:100%;
+		padding:0px;
+		text-align:center;
+
+    	}
+    	
+    	div.whiteTop {
+    		position:absolute;
+    		top:0px;
+    		left:0px;
+    		height:41px;
+    		width:100%;
+    		min-width:488px;
+    		background:#FFFFFF;
+    		z-index:0;
+    		border-bottom:3px solid #FEB000;
+    		overflow:visible;
+    	}
+    	div.mainContainer {
+    	width:98%;
+    	padding:0px 10px 0px 10px;
+    	z-index:2;
+    /*	position:relative;	*/
+    	}
+
+	td.headerTd {
+		position:relative;z-index:999;height:50px; padding-left:2px; padding-top:12px; background: url('words3.png') no-repeat 0px 4px;
+	}
     #tip {
         background-color: #CCC;
         border: 1px solid #333;
@@ -24,16 +72,37 @@
 		background:#2D2D2D;
 		color:white;
 		width:100%;
-		height:100%;
 		margin:0px;
 		padding:0px;
 	}
 	.wordinput {
-		font-size:12px;
+		font-size:18px;
+	}
+	input{
+		    font-size: 18px;
+		    padding:5px;
+		    height:23px;
+		    
 	}
 	.borderthis{ 
 		border:0px solid red;
+		font-size:13px; padding:0; color:white;text-align:center;
 	}
+	td { vertical-align:middle; }
+	td.borderthisa {
+		font-style:italic;font-size:13px;text-align:center;padding:0 10px 0 0;margin:0;vertical-align:top;
+	}
+	td.borderthisb { text-align:center;padding:0px 2px 2px 2px; }
+	td.borderthisc {
+	font-size:13px;text-align:center;padding:0 0 0 10px;margin:0;height:auto;font-style:italic;
+	}
+
+	
+	.bottomDiv { bottom:0px; position:absolute;margin-top:auto;margin-bottom:0px; min-width:565px;width:-webkit-fill-available;left:0px; color:white; padding:3px 3px;font-size:6px;text-align:center; }
+	.bottomDiv2 { overflow:display;padding:0 12%;text-align:center; font-size:14px; }
+	
+	div.whiteStripe { align:center;text-align:center;position:relative;background:#FFFFFF;z-index:1;border:3px solid #FEB000;padding:3px;white-space:nowrap;margin-bottom:5px; }
+
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,blockquote,th,td { margin:0; padding:0; font-family:arial,helvetica,sans-serif;  }
 	body { -webkit-text-size-adjust: none; }
 	body,h2 { font-size:small; }
@@ -42,13 +111,44 @@
 	input,textarea,select { font-family:inherit; font-size:inherit; font-weight:inherit; }
 	input,textarea,select { *font-size:100%; }
 	table { font-size:inherit; font:100%; }
-	select, input { font-size:0.8em; padding:2px; }
+	input { font-size:18px; padding:2px; }
+	.borderthisb input {
+	width:115px !important;
+	}
+	.borderthisc input, .borderthisa input { width:60px; }
+	.borderthise { padding-left:10px; }
+	.borderthise input {
+		padding:0 10px 0 10px;
+		font-size:12px;
+		font-weight:bold;
+	}
+	.borderthisd span { color:orange;font-weight:bold;font-size:12px; }
+	
+	.borderthisMatch {
+		text-align:center; font-weight:bold;color:red; padding:4px 0 0 0;
+	}
+	.borderthisLinks {
+		text-align:center; font-weight:bold; padding:0px 0px 0px 0px;color:white;
+	}
+	.borderthisWords div {
+		margin-right:4px; border:0px solid red;width:45%;float:left; padding:1px 2px 0 2px;text-align:left;font-size:16px;
+		
+	}
+	.borderthisWords div > span {
+		color:yellow;padding-right:6px; width:25px; float:left; text-align:right;
+	}
+	span.wordMatch { font-weight:bold;color:white;text-align:left; }
+	span.lookup {  min-width:350px; }
+	
 	a.orange:hover {
 		color:white;
 		border-bottom:orange;
+		text-decoration:none;
 	}
 	a.orange {
 		color:orange;
+		font-size:80%;
+		text-decoration:none;
 	}
 	a.orangebeer:hover {
 		color:#FFF;
@@ -56,4 +156,24 @@
 	}
 	a.orangebeer {
 		color:orange;text-decoration:none;color:#FFF;border-bottom: 1px solid orange;
+	}
+	
+	.headerTd a {
+		text-decoration:none;
+		color:black;
+	}
+	.headertd h1 {
+	margin-bottom:1px;
+	}
+	
+	td.borderthis > div {
+	margin-right:4px; border:0px solid red;width:45%;float:left; padding:1px 2px 0 2px;text-align:left;	height:23px;
+	}
+	
+	div.bottomDiv{  vertical-align:vertical-align;position:absolute; }
+	
+		table.botTable { width:310px; }
+		.borderthisd {
+		font-size:12px;
+		width:540px!important;
 	}
