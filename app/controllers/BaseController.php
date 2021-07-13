@@ -16,8 +16,7 @@ class BaseController extends Controller {
 	 *
 	 * @return void
 	 */
-	protected function setupLayout()
-	{
+	protected function setupLayout(){
 		if ( ! is_null($this->layout))
 		{
 			$this->layout = View::make($this->layout);
@@ -192,7 +191,6 @@ class BaseController extends Controller {
 			}
 		}
 		
-		
 		if(empty($wordArray)){
 			$wordArray['points']['words'] = '15';
 			$wordArray['points']['with'] = '14';
@@ -209,17 +207,6 @@ class BaseController extends Controller {
 		}
 		
 		return View::make('words', $wordArray);
-		
 	}
 
-
-
-
-
-
-
-
-
 }
-
-
