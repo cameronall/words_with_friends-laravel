@@ -1,5 +1,5 @@
 ## WordsWithFriendsHelp by Cameron Allen
-## To Install
+## To Install 
 
 1. Install Laravel: `composer install`
 2. Change database settings in app/config/database.php
